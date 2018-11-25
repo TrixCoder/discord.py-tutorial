@@ -27,7 +27,7 @@ async def on_member_join(member):
 @client.event
 async def on_member_remove(member):
     for channel in member.server.channels:
-        if channel.name == '★彡-welcome-彡★':
+        if channel.name == '<desired channel name here>':
             r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
             embed = discord.Embed(title=f'{member.name} just left {member.server.name}', description='Bye bye 👋! We will miss you 😢', color = discord.Color((r << 16) + (g << 8) + b))
             embed.add_field(name='__User left__', value='**Hope you will be back soon 😕.**', inline=True)
