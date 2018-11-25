@@ -16,7 +16,7 @@ async def on_ready():
 @client.event
 async def on_member_join(member):
     for channel in member.server.channels:
-        if channel.name == '★彡-welcome-彡★':
+        if channel.name == '<welcome channel name here>':
             r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
             embed = discord.Embed(title=f'Welcome {member.name} to {member.server.name}', description='Do not forget to check <#491281610503618561> and never try to break any one of them', color = discord.Color((r << 16) + (g << 8) + b))
             embed.add_field(name='__Thanks for joining__', value='**Hope you will be active here.**', inline=True)
