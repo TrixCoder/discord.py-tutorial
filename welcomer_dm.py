@@ -3,7 +3,6 @@ import asyncio
 from discord.ext import commands
 
 client = commands.Bot(description="MultiVerse Official Bot", command_prefix="mv!", pm_help = True)
-client.remove_command('help')
 
 @client.event
 async def on_ready():
