@@ -1,5 +1,7 @@
 import discord
 import asyncio
+import colorsys
+import random
 from discord.ext.commands import Bot
 
 client = Bot(description="<bot description>", command_prefix="d!", pm_help = True)
