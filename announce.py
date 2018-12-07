@@ -1,8 +1,6 @@
 import colorsys
 import random
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 @client.command(pass_context = True)
 @commands.has_permissions(administrator=True) 
 async def announce(ctx, channel: discord.Channel=None, *, msg: str):
@@ -10,7 +8,3 @@ async def announce(ctx, channel: discord.Channel=None, *, msg: str):
     embed=discord.Embed(title="Announcement", description="{}".format(msg), color = discord.Color((r << 16) + (g << 8) + b))
     await client.send_message(channel, embed=embed)
     await client.delete_message(ctx.message)
-    
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-client.run('Token')
