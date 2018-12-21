@@ -1,9 +1,8 @@
 import discord
 import asyncio
-from discord.ext.commands import Bot
 from discord.ext import commands
 
-client = Bot(description="BOT DESCRIPTION HERE", command_prefix="BOT PREFIX HERE", pm_help = False) #add_your_bot_description_with_prefix_here
+client = commands.Bot(description="BOT DESCRIPTION HERE", command_prefix="BOT PREFIX HERE", pm_help = False) #add_your_bot_description_with_prefix_here
 
 @client.event
 async def on_ready():
